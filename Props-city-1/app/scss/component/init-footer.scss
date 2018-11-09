@@ -1,0 +1,153 @@
+//@import "component/init-header.scss";
+
+         /*网页头部*/
+
+    
+       
+       
+       
+       
+       
+       
+       /*尾部footer*/
+      #footer{
+          height:356px ;
+          width: 100%;
+          background: #3b3f4a;
+      }
+
+
+
+         /*foot-box*/
+       #footer>.foot-box{
+           height:100% ;
+           width: 1190px;
+           margin: 0 auto;
+           //background: #CE3535;
+       }
+       
+       /*上*/
+      .foot-top{
+          //width: 891px;
+         height: 183px;
+         background: #3b3f4a;
+      }
+      
+     .foot-box>.foot-top>ul{
+         //width: 891px;
+         height: 125px;
+        // background: #E5E5E5;
+         margin-top: 25px;
+         float: left;
+         
+          li{
+              height: 100%;
+              width:221px ;
+              float: left;
+              line-height: 26px;
+              border-right: 1px solid #444853;
+              
+              
+              p{
+                  margin-left: 48px;
+                  font-size: 12px;
+                  color: #a1a694;
+                  
+                    a{
+                      color: #a1a694;
+                       //margin-left: 48px;
+                       font-size: 12px;
+                       
+                       &:hover{
+                           border-bottom: 1px solid #444853;
+                       }
+                  }
+                  
+                  &:nth-child(1){
+                      font-size: 16px;
+                  }
+              }
+          }
+     } 
+     
+     
+     
+     
+     
+     
+         /*上的右*/
+       .foot-box>.foot-top>.foot-top-right{
+           height: 150px;
+           width: 247px;
+           //background: #444853;
+           float: left;
+           overflow: hidden;
+           margin-left: 21px;
+           margin-top: 25px;
+           
+           ul>li{
+               float: left;
+               margin-bottom: 20px;
+               text-align:center ;
+               
+               &:nth-child(1){
+                   margin-right: 40px;
+               }
+               
+               
+           }
+       }
+       
+       
+       
+       
+       
+        
+     
+              /*下*/
+    
+    .foot-bottom{
+            //height: 100%;
+            width:100%;
+            //background: #67B9C4;
+            float: left;
+            border-top:1px solid  #444853;
+        
+        .bott-zhong{
+            height: 138px;
+            width: 612px;
+            //background: #444853;
+            margin:0 auto ;
+            margin-top: 35px;
+            text-align: center;
+            color: #81858f;
+            
+             a{
+                 color: #81858f;
+                 
+                 &:hover{
+                    color: #81858f;
+                    border-bottom:1px solid  #81858f; 
+                 }
+                 
+                 &:nth-last-child{
+                     //display: block;
+                     //margin: 0 auto;
+                     color: #81858f;
+                 }
+             }
+             
+             p{
+                 text-align: center;
+                 color: #666;
+                 font-size: 12px;
+             }
+        }
+    }
+      
+
+
+
+        #aaa1{
+            color: #81858f;
+       }

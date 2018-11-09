@@ -1,0 +1,246 @@
+   
+   /*网页初始化*/
+    body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+    dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,
+    button,input,textarea,th,td{
+                                margin:0;padding:0;
+                                }
+                                
+    li{
+        list-style:none;
+        }
+        
+    img{
+        border:0;
+        }
+        
+      // 初始化a标签
+    $a:none red #666666 !default;
+    
+    a{
+     text-decoration:nth($a,1); 
+     color: nth($a,3);
+          &:hover{
+            color: nth($a,2);
+            border-bottom:1px solid nth($a,2);
+        }
+     
+    }
+    
+    /*字体样式*/
+        body,button,input,select,textarea{
+            font:12px/1.6em Microsoft YaHei,Tahoma,simsun 
+        }
+        
+        /*font-size:100%;设置字体属性为默认大小，12px*/
+        h1,h2,h3,h4,h5,h6{
+            font-size:100%
+        }      
+/*网页头部*/
+#suo-box{
+    height: 100%;
+    width: 100%;
+    background: #f9f9f9;
+}
+
+#head{
+    height: 30px;
+    width: 1190px;
+    background: #f9f9f9;
+    margin: 0 auto;
+}
+
+#head>.top-one-left{
+    width: 285px;
+    height: 30px;
+    float: left;
+}
+
+#head>.top-one-left>ul{
+    width: 285px;
+    height: 30px;
+    text-align:center;
+    line-height:30px;
+    float: left;
+    
+}
+
+#head>.top-one-left>ul>li{
+    height: 30px;
+    float: left;
+    text-align:center;
+    line-height:30px;
+}
+
+
+#head>.top-one-left>ul>li:first-child>span{
+    float: left;
+    height: 30px;
+    width: 12px;
+    background:url(../images/x2.png) no-repeat;
+    background-position: 0 7px;
+}
+
+#head>.top-one-left>ul>li>img{
+    margin: 0 10px;
+}
+
+//#head>.top-one-left>ul>li>a{
+//  color: #666666;
+//}
+
+/*右部*/
+#head>.top-one-right{
+    height: 30px;
+    width: 520px;
+    float: right;
+}
+
+#head>.top-one-right>ul{
+    float: left;
+    text-align: center;
+    /*width: 520px;*/
+}
+
+#head>.top-one-right>ul>li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+#head>.top-one-right>ul>li>img{
+    margin: 0 10px;
+}
+
+#head>.top-one-right>ul>li:nth-child(4)>img{
+    margin: 0 10px;
+    
+}
+
+#head>.top-one-right>ul>li:nth-child(4)>span{
+    height: 30px;
+    width: 23px;
+    padding-left:10px ;
+    background:url(../images/x2.png) no-repeat;
+    background-position:1px -19px ;
+}
+
+#head>.top-one-right>ul>li:nth-child(4)>a{
+    margin-right:4px ;
+}
+
+
+#head>.top-one-right>ul>li:nth-child(4)>img{
+    margin-left:10px ;
+}
+
+//#head>.top-one-right>ul>li>a{
+//  color: #666666;
+//}
+
+
+
+
+
+/*搜索栏*/
+#sear{
+    height: 100%;
+    width: 100%;
+    background: #f9f9f9;
+    
+        .box-se{
+            height: 108px;
+            width: 1190px;
+            //background: blanchedalmond;
+            margin: 0 auto;
+        
+        a:first-child{
+            height: 108px;
+            width: 285px;
+            border: none;
+            float: left;
+            background:url(../images/bg.png) no-repeat;
+            background-position:-7px 24px ;
+        }
+    }
+    
+  /*input*/
+   .box-input{
+       height: 108px;
+       width: 635px;
+       //background: aqua;
+        float: left;
+      //margin-left: 208px;
+      
+         .box-input-xiao{
+             height: 38px;
+             width: 490px;
+             border:2px solid #f74a4a;
+             float: right;
+             margin-top: 20px;
+             
+             .a-left{
+                 height: 35px;
+                 width: 117px;
+                 border-bottom: 3px solid #efefef;
+                 border-right: 1px solid #efefef;
+                 float: left;
+                 line-height: 35px;
+                 cursor: pointer;
+                 /*text-align: center;*/
+                 
+                   .xiao-p{
+                        float: left;
+                     padding-left: 24px;
+                 }
+                 
+                 .xiao-sp{
+                     width: 20px;
+                     height: 20px;
+                     margin-top: 5px;
+                     float: right;
+                     background: url(../images/x2.png);
+                     background-position:0px -15px ;
+                     
+                 }
+             }
+             
+             #seek{
+                 width: 333px;
+                height: 35px;
+                border: none;
+                float: left;
+             }
+             
+             .btn-seek{
+                float: right;
+                width: 35px;
+                height: 38px;
+                //text-indent: -9999px;
+                display: block;
+                border: 0;
+                cursor: pointer;
+                background: url(../images/btn.png) ;
+               background-position:0px 0px ;
+                 
+                 &:hover{
+                    background: url(../images/btn.png) ;
+                    background-position:-40px 0px ;
+                 }
+             }
+         }
+         
+         
+   }
+   
+}
+
+
+/*扫一扫*/
+     .xiao-log{
+              width: 209px;
+              height: 108px;
+              float: right;
+              background: #666666;
+              background: url(../images/logo-2.png) no-repeat;
+         }
