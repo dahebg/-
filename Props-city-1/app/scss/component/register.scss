@@ -1,0 +1,90 @@
+#f-box{
+                height: 400px;
+                width: 500px;
+                background: #fff;
+                position: relative;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+                /*line-height: 600px;*/
+            }
+            
+            
+            
+            #o-x{
+                height: 100px;
+                width: 498px;
+                text-align: center;
+                margin-top:/*180px */ 20px;
+                margin-bottom:200px ;
+                border:1px solid #fff;
+            }
+            
+            #o-x>p:nth-child(1){
+                margin-top:40px ;
+                font-size:20px ;
+            }
+            #o-x>p:nth-child(2){
+                font-size: 16px;
+            }
+            
+            #x-x{
+                height: 170px;
+                width: 200px;
+                position: absolute; 
+                left: 50%; 
+                top: 50%;
+                //background: #FFEBCD;
+                transform: translate(-50%,-50%); 
+                line-height: 74px;
+            }
+            
+            
+            #form1{
+                height: 200px;
+                width: 200px;
+            }
+            #form1>input{
+                height: 40px;
+                width: 100%;
+                overflow: hidden;
+                border: 1px solid #86ce2f;
+            }
+            #form1>input:nth-child(1){
+                margin-top: 30px;
+                
+            }
+            
+            #d-btn{
+                    width: 200px;
+                    height: 40px;
+                    line-height: 40px;
+                   background:#86ce2f;
+                   margin: 0 auto;
+                   text-align: center;
+            }
+            
+            #d-btn>p{
+                    font-size: 17px;
+                    font-weight: 400;
+                    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+                    color: #fff;
+                    
+                    cursor: pointer;
+            }
+            #qch{
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 486px;
+                top: 0px;
+                cursor: pointer;
+            }
+            #x-bottom{
+                float: right;
+                color:#8e8e8e;
+                margin-top: 30px;
+                margin-right: 10px;
+            }

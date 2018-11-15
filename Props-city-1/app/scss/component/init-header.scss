@@ -27,6 +27,7 @@
      
     }
     
+    
     /*字体样式*/
         body,button,input,select,textarea{
             font:12px/1.6em Microsoft YaHei,Tahoma,simsun 
@@ -77,7 +78,7 @@
     float: left;
     height: 30px;
     width: 12px;
-    background:url(../images/x2.png) no-repeat;
+    background:url(/images/x2.png) no-repeat;
     background-position: 0 7px;
 }
 
@@ -121,7 +122,7 @@
     height: 30px;
     width: 23px;
     padding-left:10px ;
-    background:url(../images/x2.png) no-repeat;
+    background:url(/images/x2.png) no-repeat;
     background-position:1px -19px ;
 }
 
@@ -159,7 +160,7 @@
             width: 285px;
             border: none;
             float: left;
-            background:url(../images/bg.png) no-repeat;
+            background:url(/images/bg.png) no-repeat;
             background-position:-7px 24px ;
         }
     }
@@ -199,15 +200,15 @@
                      height: 20px;
                      margin-top: 5px;
                      float: right;
-                     background: url(../images/x2.png);
+                     background: url(/images/x2.png);
                      background-position:0px -15px ;
                      
                  }
              }
              
              #seek{
-                 width: 333px;
-                height: 35px;
+                 width: 336px;
+                height: 38px;
                 border: none;
                 float: left;
              }
@@ -220,11 +221,11 @@
                 display: block;
                 border: 0;
                 cursor: pointer;
-                background: url(../images/btn.png) ;
+                background: url(/images/btn.png) ;
                background-position:0px 0px ;
                  
                  &:hover{
-                    background: url(../images/btn.png) ;
+                    background: url(/images/btn.png) ;
                     background-position:-40px 0px ;
                  }
              }
@@ -242,5 +243,5 @@
               height: 108px;
               float: right;
               background: #666666;
-              background: url(../images/logo-2.png) no-repeat;
+              background: url(/images/logo-2.png) no-repeat;
          }

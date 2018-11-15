@@ -1,0 +1,757 @@
+@import "init-header.scss";
+@import "init-footer.scss";
+
+
+
+/*nav主导航部分*/
+    #nav{
+        width: 100%;
+        height: 100%;
+        
+        .nav-top{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background: #f3f4f6;
+            
+            .t-one{
+                width: 100%;
+                height: 54px;
+                 background: #3a3f4a;
+                
+                
+            }
+        }
+        
+    }
+    
+    .t-one>ul>li{
+        float: left;
+        text-align: center;
+        width: 126px;
+        background: #3a3f4a;
+    }
+    
+    .t-one>ul>li:nth-child(1){
+        height: 54px;
+        width: 190px;
+        background: #3a3f4a;
+        
+        
+    }
+    
+    #sy{
+          height: 44px;  
+        }
+        
+     .t-one>ul>li:nth-child(1){
+         margin-left: 20px;
+     }
+    
+    .t-one>ul>li:nth-child(1)>a{
+        border: none;
+    }
+    
+    .t-one>ul>li>.active{
+            background: #f74a4a;
+            border-color: #ce3535;
+            color: #fff;
+    }
+    
+    .t-one>ul>li>a{
+        font: 16px/32px 'Microsoft Yahei','黑体';
+        display: block;
+        height: 41px;
+        padding-top: 10px;
+        border-bottom: 3px solid #3a3f4a;
+        position: relative;
+        color: #fff;
+        
+            &:hover{
+                background: #f74a4a;
+                border-color: #ce3535;
+                color: #fff;
+                }
+    }
+
+
+
+
+/*二级导航subnav*/
+  #subnav{
+      height: 330px;
+      width: 190px;
+      background: #f55656;
+      float: left;
+      position: absolute;
+      left: 20px;
+  }
+  
+//#subnav>dl{
+//    width: 251px;
+//}
+  
+  #subnav>.bot>dt{
+    font: 16px/64px 'Microsoft Yahei','黑体';
+    background: #f55656;
+    color: #fff;
+    border: 1px solid #f55656;
+    border-bottom: 1px solid #ee4545;
+    border-right: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+     
+     &:hover{
+         width: 190px;
+         background: #fff;
+         color: #666;
+         border: none;
+     }
+     &:hover>s{
+         background: url(../images/x2.png) no-repeat;
+         background-position: -148px -207px;
+     }
+     &:hover>i{
+         background: url(../images/x2.png) no-repeat;
+         background-position: -180px -207px;
+     }
+     
+  }
+  
+  .col_2{
+        position: absolute;
+        top: 0px;
+        left: 190px;
+        display: none;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        //width: 125px;
+        border-left: 0;
+        padding: 6px 0 7px 0;
+        overflow: hidden;
+        height: 315px;
+        
+  }
+  
+  #subnav>.bot:hover >.col_2{
+            display: block;
+        }
+        
+   
+        
+        
+  
+  .dev{
+    float: left;
+    display: inline;
+  }
+  
+  .dev>a{
+        display: block;
+        width: 95px;
+        height: 35px;
+        font: 14px/35px 'Microsoft Yahei','黑体';
+        padding: 0 15px;
+  }
+  
+  /*角色扮演*/
+   #subnav>.bot-one>dt{
+    font: 16px/64px 'Microsoft Yahei','黑体';
+    background: #f55656;
+    color: #fff;
+    border: 1px solid #f55656;
+    border-bottom: 1px solid #ee4545;
+    border-right: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+     
+     &:hover{
+         background: #fff;
+         color: #666;
+         border:none;
+         
+     }
+     &:hover>s{
+         background: url(../images/x2.png) no-repeat;
+         background-position: -30px -207px;
+     }
+     &:hover>i{
+         background: url(../images/x2.png) no-repeat;
+         background-position: -180px -207px;
+     }
+     
+  }
+  
+  .col_3{
+        position: absolute;
+        top: 0px;
+        left: 190px;
+        display: none;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        width: 125px;
+        border-left: 0;
+        padding: 6px 0 7px 0;
+        overflow: hidden;
+        //height: 314px;
+        
+        
+  }
+  
+  #subnav>.bot-one:hover >.col_3{
+            display: block;
+        }
+        
+        
+   
+
+
+  /*休闲游戏*/
+ 
+  #subnav>.bot-two>dt{
+    font: 16px/64px 'Microsoft Yahei','黑体';
+    background: #f55656;
+    color: #fff;
+    border: 1px solid #f55656;
+    border-bottom: 1px solid #ee4545;
+    border-right: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+     
+     &:hover{
+         background: #fff;
+         color: #666;
+          border:none;
+     }
+     
+     &:hover>s{
+         background: url(/images/x2.png) no-repeat;
+         background-position: -89px -207px;
+     }
+     &:hover>i{
+         background: url(/images/x2.png) no-repeat;
+         background-position: -180px -207px;
+     }
+  }
+  
+  .col_4{
+        position: absolute;
+        top: 0px;
+        left: 190px;
+        display: none;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        width: 125px;
+        border-left: 0;
+        padding: 6px 0 7px 0;
+        overflow: hidden;
+        height: 315px;
+        
+  }
+  
+  #subnav>.bot-two:hover >.col_4{
+            display: block;
+        }
+        
+        
+    /*网页游戏*/
+        
+    #subnav>.bot-three>dt{
+    font: 16px/64px 'Microsoft Yahei','黑体';
+    background: #f55656;
+    color: #fff;
+    border: 1px solid #f55656;
+    border-bottom: 1px solid #ee4545;
+    border-right: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+     
+     &:hover{
+         background: #fff;
+         color: #666;
+         border:none;
+         height: 66px;
+     }
+     
+     &:hover>s{
+         background: url(/images/x2.png) no-repeat;
+         background-position: -120px -207px;
+     }
+     &:hover>i{
+         background: url(/images/x2.png) no-repeat;
+         background-position: -180px -207px;
+     }
+  }
+  
+  .col_5{
+        position: absolute;
+        top: 0px;
+        left: 190px;
+        display: none;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        width: 125px;
+        border-left: 0;
+        padding: 6px 0 7px 0;
+        overflow: hidden;
+        height: 315px;
+        
+  }
+  
+  #subnav>.bot-three:hover >.col_5{
+            display: block;
+        }
+        
+        
+        
+        
+        
+           /*图标*/
+
+  /*热门游戏*/
+  #subnav>.bot>dt>.s-sp{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 21px 10px 0 22px;
+    background: url(/images/x2.png) no-repeat;
+    background-position: -148px -178px;
+  }
+  
+  
+  #subnav>.bot>dt>.i-sp{
+        display: block;
+        width: 8px;
+        height: 11px;
+        background: url(/images/x2.png) no-repeat;
+        background-position: -178px -178px;
+        position: absolute;
+        top: 28px;
+        right: 10px;
+        overflow: hidden;
+  }
+  
+  /*角色扮演*/
+    #subnav>.bot-one>dt>.s-sp-1{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 21px 10px 0 22px;
+    background: url(/images/x2.png) no-repeat;
+    background-position: -28px -178px;
+  }
+  
+  
+  #subnav>.bot-one>dt>.i-sp{
+        display: block;
+        width: 8px;
+        height: 11px;
+        background: url(/images/x2.png) no-repeat;
+        background-position: -178px -178px;
+        position: absolute;
+        top: 28px;
+        right: 10px;
+        overflow: hidden;
+  }
+  
+  /*竞技游戏*/
+ 
+ 
+ #subnav>#sb-1>dt:hover>s{
+         background: url(/images/x2.png) no-repeat;
+         background-position: -60px -207px;
+     }
+     
+    #subnav>#sb-1>dt:hover>i{
+        background: url(/images/x2.png) no-repeat;
+        background-position: -180px -207px;
+    }
+     
+   #subnav>.bot:nth-child(3)>dt>.s-sp-2{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 21px 10px 0 22px;
+    background: url(/images/x2.png) no-repeat;
+    background-position: -60px -178px;
+  }
+  
+  
+     
+  
+  
+  #subnav>.bot:nth-child(3)>dt>.i-sp-1{
+        display: block;
+        width: 8px;
+        height: 11px;
+        background: url(/images/x2.png) no-repeat;
+        background-position: -178px -178px;
+        position: absolute;
+        top: 28px;
+        right: 10px;
+        overflow: hidden;
+  }
+  
+  
+  
+   /*休闲游戏*/
+    #subnav>.bot-two>dt>.s-sp-3{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 21px 10px 0 22px;
+    background: url(/images/x2.png) no-repeat;
+    background-position: -88px -178px;
+  }
+  
+  
+  #subnav>.bot-two>dt>.i-sp-2{
+        display: block;
+        width: 8px;
+        height: 11px;
+        background: url(/images/x2.png) no-repeat;
+        background-position: -178px -178px;
+        position: absolute;
+        top: 28px;
+        right: 10px;
+        overflow: hidden;
+  }
+      
+
+       /*网页游戏*/
+      
+ #subnav>.bot-three>dt>.s-sp-4{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 21px 10px 0 22px;
+    background: url(/images/x2.png) no-repeat;
+    background-position: -119px -178px;
+  }
+  
+  
+  #subnav>.bot-three>dt>.i-sp-3{
+        display: block;
+        width: 8px;
+        height: 11px;
+        background: url(/images/x2.png) no-repeat;
+        background-position: -178px -178px;
+        position: absolute;
+        top: 28px;
+        right: 10px;
+        overflow: hidden;
+  }
+  
+
+
+ #menu{
+     width: 100%;
+      height: 100%;
+      
+      .guo{
+           height: 44px;
+            line-height: 44px;
+            width: 1190px;
+            margin: 0 auto;
+            
+            a{
+                float: left;
+            }
+            
+             p{
+                float: left;
+            }
+      }
+      
+      
+      /*选项区*/
+      #xuan{
+          width: 1190px;
+          height: 398px;
+          margin: 0 auto;
+          //background: #EE4545;
+          border: 1px solid #666666;
+          
+          /*-6个选项*/
+          #x-1{
+              width: 1090px;
+              margin: 0 auto;
+              height: 66px;
+              border-bottom: 1px solid #d2d2d2;
+              
+              
+                
+          }
+          
+          
+           #x-2{
+              width: 1090px;
+              margin: 0 auto;
+              height: 92px;
+              border-bottom: 1px solid #d2d2d2;
+              
+                p{
+                    line-height: 92px;
+                    margin-right:20px ;
+                    float: left;
+                }
+                
+                
+                
+                ul{
+                    width: 1000px;
+                    float: left;
+                    
+                    li{
+                            float: left;
+                            width: 66px;
+                            height: 66px;
+                            margin: 7px 17px 0 0;
+                            
+                             &:nth-child(1)>a{
+                                border: 3px solid red; 
+                             } 
+                            
+                            a{
+                                display: block;
+                                float: left;
+                                width: 60px;
+                                height: 60px;
+                                border: 3px solid #fff;
+                                margin-top: 10px;
+                                text-align: center;
+                                vertical-align: middle;
+                                  
+                                  &:hover{
+                                            border: 3px solid red;
+                                        }
+                                  
+                                  img{
+                                            width: 60px;
+                                            height: 60px;
+                                            vertical-align: middle;
+                                  }
+                            }                       
+                    }
+                }
+              
+              
+              
+          }
+          
+           #x-3{
+              width: 1090px;
+              margin: 0 auto;
+              height: 75px;
+              border-bottom: 1px solid #d2d2d2;
+              
+              p{
+                    line-height: 75px;
+                    margin-right:20px ;
+                    float: left;
+                }
+                
+                ul{
+                     width: 1000px;
+                    float: left;
+                    
+                    li{
+                            display: inline-block;
+                            height: 24px;
+                            white-space: nowrap;
+                            margin: 0 0 9px 5px;
+                            
+                              
+                            
+                            a{
+                                margin-top: 10px;
+                                display: inline-block;
+                                color: #6b6b6b;
+                                font-size: 12px;
+                                line-height: 24px;
+                                height: 24px;
+                                padding: 0 18px;
+                                
+                                &:hover{
+                                  background: red;
+                              }
+                            }
+                    }
+                }
+                
+                
+          }
+          
+          
+           #x-4{
+              width: 1090px;
+              margin: 0 auto;
+              height: 66px;
+              border-bottom: 1px solid #d2d2d2;
+              
+              p{
+                    line-height: 66px;
+                    margin-right:20px ;
+                    float: left;
+                }
+                
+                ul{
+                     width: 1000px;
+                    float: left;
+                    line-height: 66px;
+                    
+                    li{
+                            display: inline-block;
+                            height: 24px;
+                            white-space: nowrap;
+                            margin: 0 0 9px 5px;
+                            
+                              
+                            
+                            a{
+                                //margin-top: 10px;
+                                display: inline-block;
+                                color: #6b6b6b;
+                                font-size: 12px;
+                                line-height: 24px;
+                                height: 24px;
+                                padding: 0 18px;
+                                
+                                &:hover{
+                                  background: red;
+                              }
+                            }
+                    }
+                }
+          }
+          
+          
+          .ac{
+            background: red;  
+          }
+          
+          
+           #x-5{
+              width: 1090px;
+              margin: 0 auto;
+              height: 50px;
+              border-bottom: 1px solid #d2d2d2;
+              
+              p{
+                    line-height: 50px;
+                    margin-right:20px ;
+                    float: left;
+                }
+                
+                
+                ul{
+                     width: 1000px;
+                    float: left;
+                    line-height: 50px;
+                    
+                    li{
+                            display: inline-block;
+                            height: 24px;
+                            white-space: nowrap;
+                            margin: 0 0 9px 5px;
+                            
+                              
+                            
+                            a{
+                                //margin-top: 10px;
+                                display: inline-block;
+                                color: #6b6b6b;
+                                font-size: 12px;
+                                line-height: 24px;
+                                height: 24px;
+                                padding: 0 18px;
+                                
+                                &:hover{
+                                  background: red;
+                              }
+                            }
+                    }
+                }
+                
+              
+          }
+          
+          
+           #x-6{
+              width: 1090px;
+              margin: 0 auto;
+              height: 42px;
+              border-bottom: 1px solid #d2d2d2;
+              
+              p{
+                    line-height: 42px;
+                    margin-right:20px ;
+                    float: left;
+                }
+                
+                
+                 ul{
+                     width: 1000px;
+                    float: left;
+                    line-height: 42px;
+                    
+                    li{
+                            display: inline-block;
+                            height: 24px;
+                            white-space: nowrap;
+                            margin: 0 0 9px 5px;
+                            
+                              
+                            
+                            a{
+                                //margin-top: 10px;
+                                display: inline-block;
+                                color: #6b6b6b;
+                                font-size: 12px;
+                                line-height: 24px;
+                                height: 24px;
+                                padding: 0 18px;
+                                
+                                &:hover{
+                                  background: red;
+                              }
+                            }
+                    }
+                }
+                
+                
+                
+          }
+          
+          /*-6个选项的结尾*/
+          
+      }
+      
+      
+      
+ }
+ 
+ 
+       /*过渡地带*/
+ .guo{
+           height: 44px;
+            line-height: 44px;
+            width: 1190px;
+            margin: 0 auto;
+            
+            a{
+                float: left;
+            }
+            
+             p{
+                float: left;
+            }
+            
+   }
