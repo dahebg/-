@@ -1,0 +1,336 @@
+/*网页初始化*/
+    body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+    dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,
+    button,input,textarea,th,td{
+                                margin:0;padding:0;
+                                }
+                                
+    li{
+        list-style:none;
+        }
+        
+    img{
+        border:0;
+        }
+        
+      // 初始化a标签
+    $a:none red #666666 !default;
+    
+    a{
+     text-decoration:nth($a,1); 
+     color: nth($a,3);
+          &:hover{
+            color: nth($a,2);
+            border-bottom:1px solid nth($a,2);
+        }
+     
+    }
+    
+    
+    /*字体样式*/
+        body,button,input,select,textarea{
+            font:12px/1.6em Microsoft YaHei,Tahoma,simsun 
+        }
+        
+        /*font-size:100%;设置字体属性为默认大小，12px*/
+        h1,h2,h3,h4,h5,h6{
+            font-size:100%
+        }  
+        
+        
+        
+         /*box*/
+        
+       #box{
+           width: 100%;
+           height: 100%;
+           background: #fff;
+           
+         /*左边的图*/
+           #left-one{
+               width: 480px;
+               height: 890px;
+               float: left;
+               
+               img{
+                  width: 480px; 
+                  height: 100%;
+               }
+           }
+           
+         /*右边的表单*/
+        
+            #right-one{
+                width: 640px;
+                height: 890px;
+                float: right;
+                //background: #86CE2F;
+            }
+           
+           /*上*/
+          .top-one{
+              width: 509px;
+              height:34px;
+              float: right;
+              //margin-left: 54px;
+              
+              ul{
+                width: 509px;
+                height:34px; 
+                float: left;
+                //background: #3A3F4A; 
+                margin-top: 20px;
+                  
+                  li{
+                      width: 95px;
+                      height:20px;
+                      float: left; 
+                      text-align: center;
+                      margin-right:20px; 
+                      
+                      &:nth-child(1){
+                        border-radius: 6px;
+                        background: #f54444;
+                        background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+                        height: 24px;
+                        line-height: 24px;
+                        margin: 10px 0 0 5px;
+                        padding: 0 10px 0 24px;
+                        color: #fff;
+                        font-weight: 300;
+                        position: relative;
+                        width:72px ;
+                        margin-right: 34px;
+    
+                        img{
+                            position: absolute;
+                            left: 3px;
+                            top: -12px;
+                        }
+                        
+                         a{
+                             color: #fff;
+                            display: block;
+                            line-height: 21px; 
+                         }
+                      }
+                      
+                      
+                      &:nth-child(2){
+                          position: relative;
+                          
+                          img{
+                             position: absolute;
+                             top:15px; 
+                             left: -4px;
+                          }
+                      }
+                      
+                      
+                      
+                      a{
+                         line-height: 44px; 
+                         font-size: 14px;
+                         
+                         &:hover{
+                             border: none;
+                             color: #000;
+                         }
+                      }
+                  }
+              }
+          }
+           
+       }
+        
+        
+        
+      /*欢迎注册QQ*/
+        
+        
+        .huan{
+            height:98px ;
+            width: 640px;
+            margin-top: 130px;
+            margin-bottom: 68px;
+            
+            
+            p{
+                height: 40px;
+                color: #000000;
+              font-size:40px ;  
+            }
+            
+             ul{
+                 height:60px ;
+                 width: 640px;
+                 margin-top: 20px;
+                 
+                 li{
+                    width: 240px; 
+                    font-size: 24px;
+                    color: #333333; 
+                    float: left;
+                    
+                    &:nth-child(2){
+                         
+                         float: right;
+                         
+                         a{
+                             color: #359eff;
+                             
+                             &:hover{
+                                color: #1266ff; 
+                                border: none;
+                             } 
+                         }
+                    }
+                 }
+                
+             }
+        }
+        
+        
+        
+        /*from*/
+       
+       #from{
+           width:480px ;
+           height: 342px;
+           //background: #ffd0d0;
+           
+           .input-1{
+                width:480px ;
+                height: 100px;
+                
+                #user{
+                    border: 1px #aaa solid;
+                    border-radius: 4px;
+                    background: 0 0;
+                    text-align: left;
+                    font-size: 20px;
+                    width: 438px;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0 20px;
+                }
+           }
+           
+           .input-2{
+                width:480px ;
+                height: 100px;
+                //background: #fff;
+                margin-bottom: 40px;
+                
+                #password{
+                    border: 1px #aaa solid;
+                    border-radius: 4px;
+                    background: 0 0;
+                    text-align: left;
+                    font-size: 20px;
+                    width: 438px;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0 20px;
+                }
+           }
+           
+           
+           #login{
+              width:480px ;
+              height: 60px; 
+              border: 1px #3083ff solid;
+              border-radius: 4px;
+              background-color: #3487ff;
+               cursor:pointer; 
+              text-align: center;
+             
+              
+                &:hover{
+                    background: #1c69d8;
+                }
+                 
+                 
+                 p{
+                   font-size: 26px;
+                   color: #fff;  
+                   line-height: 60px;
+                 }
+           }
+       }
+        
+        
+        
+        
+        
+          /*选项*/
+        #option{
+            
+            width: 280px;
+            height: 45px;
+            margin-bottom: 60px;
+            
+             .one{
+                 float: left;
+                 
+                 input{
+                     float: left; 
+                     margin-top: 4px;
+                     margin-right: 4px;
+                     margin-bottom: 4px;
+                 }
+             }
+             
+            .two{
+                float: left;
+                
+                 input{
+                     float: left; 
+                     margin-top: 4px;
+                     margin-right: 4px;
+                 }
+            }
+            
+            p{
+                font-size: 12px;
+                float: left;
+                color: #ccc;
+            }
+               
+              
+                
+
+        }
+        
+        
+        
+        
+        
+         .p-z{
+                   font-size: 14px;
+                   color: #ccc;
+               } 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
