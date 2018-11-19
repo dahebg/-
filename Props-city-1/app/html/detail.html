@@ -25,7 +25,7 @@
 						<li><a href="javascript:;">手游中心</a></li>
 						<li><a href="./spleibiao.html" class="active">聚豆商城</a></li>
 						<li><a href="javascript:;">个人中心</a></li>
-						<li><a href="javascript:;">购物车</a></li>
+						<li><a href="http://localhost:1111/html/shopping.html" class="active">购物车</a></li>
 						<!--<li><a href="javascript:;">购物车</a></li>-->
 					</ul>
 				</div>
@@ -210,7 +210,7 @@
 			 <div id="right">
 			 	<h3>{{product.name}}</h3>
 			 	<span class="sp">
-			 		<p style="font-size: 36px; color: #f74a4a;">￥{{product.jiage}}</p>
+			 		<p style="font-size: 36px; color: #f74a4a;" id="jiagea">￥{{product.jiage}}</p>
 			 	</span>
 			 	
 			 	<div class="sm">
@@ -220,9 +220,9 @@
 			 	<div class="sl">
 			 		<p style="float: left;">数量</p>
 			 		<div id="z-btn">
-			 			<a href="javascript:;"><p>减</p></a>
+			 			<a href="javascript:;"><p id="jian">减</p></a>
 			 			<input type="text" name="sla" id="sla" value="1" />
-			 			<a href="javascript:;"><p>加</p></a>
+			 			<a href="javascript:;"><p id="jia">加</p></a>
 			 		</div>
 			 	</div>
 			 	
@@ -325,3 +325,45 @@
 		      	
 		      	
 		     <!-- </div>--><!--zhong的结尾-->
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	
+		     	<!--par.forEach(function(prod){
+				var moc = `
+				<div id="spl">
+		  	        	<ul class="wrn">
+		  	        		<li>
+		  	        			<div class="zd">
+		  	        				<input type="checkbox" class="anlui">
+		  	        			</div>
+		  	        			
+		  	        			<img src="/images/b2.jpg"/>
+		  	        			<a href="javascript:;">${prod.h3}</a>
+		  	        			<p>规格：常规</p>
+		  	        			<p>${prod.cd}.00 元</p>
+		  	        			<a href="javascript:;">-</a>
+		  	        			<input type="" name="" id="" value="${prod.cd}" />
+		  	        			<a href="javascript:;">+</a>
+		  	        			<p>299.00 元</p>
+		  	        			<a href="javascript:;">删除</a>
+		  	        		</li>
+		  	        		
+		  	        		<li></li>
+		  	        	</ul>
+		  	    	 	
+		  	    	 </div><!--spl的结尾-->
+		  	    	 <!--`
+				console.log(moc);-->
+		     

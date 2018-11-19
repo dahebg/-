@@ -1,6 +1,6 @@
 require(["config"],function(){
 
-require(["jquery","template"],function($,template){
+require(["jquery","template","migrate"],function($,template){
 	
 	new Promise(function(resolve,reject){
 			$("header").load("./component/header.html",function(){
@@ -94,14 +94,96 @@ require(["jquery","template"],function($,template){
 		        	     
 		               })
 						
+						//数量加减
+						$("#jia").on("click",function(){
+							var cd = parseInt($("#sla").val());
+							//parseInt(i);
+						    cd++;
+							console.log(cd);
+							$("#sla").val(cd);
+						})
 						
-					}
+						$("#jian").on("click",function(){
+							var cd = parseInt($("#sla").val());
+							//parseInt(i);
+						    cd--;
+						    if(cd <= 1){
+						    	cd=1;
+						       console.log(cd);
+							   $("#sla").val(cd);
+						    }else{
+						    	console.log(cd);
+							   $("#sla").val(cd);
+						    }
+							
+						})
+						
+						
+						
+						 //存入cookie
+				         $("#gw").on("click",function(){
+				         	var product = $.cookie('product');
+				         	if(product){
+				         		product = JSON.parse($.cookie('product'));
+				         	}else{
+				         		product = [];
+				         	}
+				         	
+				         	var imgs = $("#lp").attr("src");
+
+				         	
+				         	var options = {
+				         		h3 : $("#right h3").html(),
+				         		cd : parseInt($("#sla").val()),
+				         		img : imgs,
+				         		p : $("#jiagea").html()
+				         		
+				         	},
+				         	data;
+				         	
+				         	
+				         	for (var i = 0; i < product.length; i++) {
+				         		if(product[i].h3 === options.h3){
+				         			data = product[i];
+				         			break;
+				         		}
+				         	}
+				   			
+				         	if(i === product.length){
+				         		product.push(options);
+				         		console.log('111')
+				         	}else{
+				         		data.cd += options.cd
+				         		console.log(2222)
+				         		console.log(data.cd)
+				         	}
+				         	
+				         	
+				         	$.cookie("product", JSON.stringify(product) ,{expires: 2,path:"/"});
+				         	var w = $.cookie("product"); 
+				         	console.log(w);
+				         	if(w){
+				         		alert("已加入购物车");
+				         		 window.location.href = "http://localhost:1111/html/shopping.html";
+			        	 	}
+  	
+				         })
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					}//ajaxfunction(res)的结尾
 				})
 		
 		
 		}).then(function(){
-
-               console.log("666");
+        console.log("777");
         
 
 		}).then(function(){
